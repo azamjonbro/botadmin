@@ -48,7 +48,7 @@ function Add() {
       })
       .catch((error) => {
         console.error('Error:', error);
-        toast.error('Error adding product');
+        toast.dark('Error adding product');
       });
   };
 

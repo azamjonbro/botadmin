@@ -34,7 +34,7 @@ function Add() {
     formData.append('category', category);
     formData.append('category_rout', categoryTittle);
 
-    fetch('https://neevoo.uz/product/12345678/create/', {
+    fetch('https://tech-store.uz/product/12345678/create/', {
       method: 'POST',
       body: formData, // Send FormData instead of JSON string
     })

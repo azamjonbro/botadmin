@@ -28,7 +28,7 @@ function Add() {
     formData.append('title', title);
     formData.append('price', price);
     formData.append('code', code);
-    formData.append('image', image); // Append file to FormData
+    // formData.append('image', image); 
     formData.append('box_count', quantity);
     formData.append('residual', astatka);
     formData.append('category', category);

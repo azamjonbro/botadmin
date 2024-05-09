@@ -28,7 +28,7 @@ function Add() {
     formData.append('title', title);
     formData.append('price', price);
     formData.append('code', code);
-    // formData.append('image', image); 
+    formData.append('image', image); 
     formData.append('box_count', quantity);
     formData.append('residual', astatka);
     formData.append('category', category);
@@ -36,7 +36,7 @@ function Add() {
 
     fetch('https://tech-store.uz/product/12345678/create/', {
       method: 'POST',
-      body: formData, // Send FormData instead of JSON string
+      body: formData,
     })
       .then((res) => res.json())
       .then((data) => {
